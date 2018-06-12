@@ -2,7 +2,7 @@ class Player(object):
 
     def __init__(self, name):
         self.name = name
-        self._lives = 2
+        self._lives = 3
         self.level = 1
         self.score = 0
 
@@ -10,7 +10,7 @@ class Player(object):
         return self._lives
 
     def _set_lives(self, lives):
-        if lives >=0:
+        if lives >= 0:
             self._lives = lives
         else:
             print("Lives cannot be negative")
