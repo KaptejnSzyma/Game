@@ -25,3 +25,6 @@ print(tim)
 
 tim.level += 5
 print(tim)
+
+tim.level = 3
+print(tim)
