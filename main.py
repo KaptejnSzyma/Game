@@ -6,4 +6,13 @@ print(tim.name)
 print(tim.lives)
 
 tim.lives -= 1
-print(tim.lives)
+print(tim)
+
+tim.lives -= 1
+print(tim)
+
+tim.lives -= 1
+print(tim)
+
+tim.lives -= 1
+print(tim)
