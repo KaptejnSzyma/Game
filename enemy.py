@@ -1,4 +1,6 @@
-class Enemy:
+# class Enemy
+class Enemy(object):
+
     def __init__(self, name="Enemy", hit_points=0, lives=1):
         self.name = name
         self.hit_points = hit_points
@@ -14,3 +16,7 @@ class Enemy:
 
     def __str__(self):
         return "Name: {0.name}, Lives: {0.lives}, Hit points: {0.hit_points}".format(self)
+
+
+class Troll(Enemy):
+    pass
