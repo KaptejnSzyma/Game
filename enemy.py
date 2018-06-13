@@ -19,4 +19,6 @@ class Enemy(object):
 
 
 class Troll(Enemy):
-    pass
+
+    def __init__(self, name):
+        Enemy.__init__(self, name=name, lives=1, hit_points=23)

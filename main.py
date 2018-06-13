@@ -1,11 +1,11 @@
 from enemy import Enemy, Troll
 
-ugly_troll = Troll()
+ugly_troll = Troll("Pug")
 
 print("Ugly troll - {}".format(ugly_troll))
 
-another_troll = Troll("Ug", 10, 1)
+another_troll = Troll("Ug")
 print("Another troll - {}".format(another_troll))
 
-brother = Enemy("Urg", 23)
+brother = Troll("Urg")
 print(brother)
