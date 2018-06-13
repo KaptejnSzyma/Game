@@ -9,3 +9,7 @@ print("Another troll - {}".format(another_troll))
 
 brother = Troll("Urg")
 print(brother)
+
+ugly_troll.grunt()
+another_troll.grunt()
+brother.grunt()
