@@ -21,4 +21,5 @@ class Enemy(object):
 class Troll(Enemy):
 
     def __init__(self, name):
-        Enemy.__init__(self, name=name, lives=1, hit_points=23)
+        # super(Troll, self).__init__(name=name, lives=1, hit_points=23)
+        super().__init__(name=name, lives=1, hit_points=23)
