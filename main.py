@@ -1,4 +1,4 @@
-from enemy import Enemy, Troll, Vampyre
+from enemy import Enemy, Troll, Vampyre, VampyreKing
 
 ugly_troll = Troll("Pug")
 
@@ -34,3 +34,9 @@ while vamp._alive:
 vamp._lives = 0
 vamp._hit_points = 1
 print(vamp)
+
+dracula = VampyreKing("Dracula")
+print(dracula)
+
+dracula.take_damage(12)
+print(dracula)
