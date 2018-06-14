@@ -25,3 +25,7 @@ print(vamp)
 
 vamp.take_damage(4)
 print(vamp)
+
+while vamp.alive:
+    vamp.take_damage(2)
+    print(vamp)
