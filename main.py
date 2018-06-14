@@ -1,4 +1,4 @@
-from enemy import Enemy, Troll
+from enemy import Enemy, Troll, Vampyre
 
 ugly_troll = Troll("Pug")
 
@@ -19,3 +19,9 @@ another_troll.take_damage(3)
 brother.take_damage(2)
 
 print("{}\n{}\n{}".format(ugly_troll, another_troll, brother))
+
+vamp = Vampyre("Xen")
+print(vamp)
+
+vamp.take_damage(4)
+print(vamp)

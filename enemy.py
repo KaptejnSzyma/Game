@@ -28,8 +28,8 @@ class Troll(Enemy):
         print("Me {0.name}. {0.name} stomp you".format(self))
 
 
-# class Vampyre(Enemy):
-#
-#     def __init__(self, name):
-#
-#
+class Vampyre(Enemy):
+
+    def __init__(self, name):
+        super().__init__(name=name, lives=3, hit_points=12)
+
