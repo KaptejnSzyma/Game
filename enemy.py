@@ -10,7 +10,7 @@ class Enemy(object):
         remaining_points = self.hit_points - damage
         if remaining_points >= 0:
             self.hit_points = remaining_points
-            print("I took {} points damage and have {} left".format(damage, self.hit_points))
+            print("I took {} points of damage and have {} left".format(damage, self.hit_points))
         else:
             self.lives -= 1
 
@@ -26,3 +26,10 @@ class Troll(Enemy):
 
     def grunt(self):
         print("Me {0.name}. {0.name} stomp you".format(self))
+
+
+# class Vampyre(Enemy):
+#
+#     def __init__(self, name):
+#
+#

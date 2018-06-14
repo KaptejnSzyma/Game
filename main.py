@@ -14,5 +14,8 @@ ugly_troll.grunt()
 another_troll.grunt()
 brother.grunt()
 
-monster = Enemy("Basic enemy")
-monster.grunt()
+ugly_troll.take_damage(5)
+another_troll.take_damage(3)
+brother.take_damage(2)
+
+print("{}\n{}\n{}".format(ugly_troll, another_troll, brother))
