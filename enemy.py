@@ -1,4 +1,5 @@
-# class Enemy
+import random
+
 class Enemy(object):
 
     def __init__(self, name="Enemy", hit_points=0, lives=1):
@@ -38,4 +39,11 @@ class Vampyre(Enemy):
 
     def __init__(self, name):
         super().__init__(name=name, lives=3, hit_points=12)
+
+    def dodges(self):
+        if random.randint(1, 3) == 3:
+            print("**** {0.name}".format(self))
+            return True
+        else:
+            return False
 
