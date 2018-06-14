@@ -26,6 +26,11 @@ print(vamp)
 vamp.take_damage(4)
 print(vamp)
 print("----Trying to kill Xen----")
-while vamp.alive:
+
+while vamp._alive:
     vamp.take_damage(2)
     # print(vamp)
+
+vamp._lives = 0
+vamp._hit_points = 1
+print(vamp)
