@@ -10,6 +10,18 @@ class Duck(object):
         print("Quack Quack")
 
 
+class Penguin(object):
+
+    def walk(self):
+        print("Waddle, waddle, I waddle too")
+
+    def swim(self):
+        print("Come on in, but it's a bit chilly this for South")
+
+    def quack(self):
+        print("Are you 'avin a larf? I'm a penguin! ")
+
+
 def test_duck(duck):
     duck.walk()
     duck.swim()
@@ -19,3 +31,6 @@ def test_duck(duck):
 if __name__ == '__main__':
     donald = Duck()
     test_duck(donald)
+
+    percy = Penguin()
+    test_duck(percy)
