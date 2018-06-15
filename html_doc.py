@@ -28,7 +28,7 @@ class Head(Tag):
 class Body(Tag):
 
     def __init__(self):
-        super().__init__('body', '')
+        super().__init__('body', '') # body contents will be built up separately
         self._body_contents = []
 
     def add_tag(self, name, contents):
@@ -40,3 +40,21 @@ class Body(Tag):
             self.contents += str(tag)
 
         super().display()
+
+
+class HtmlDoc(object):
+
+    def __init__(self):
+        self._doc_type = DocType()
+        self._head = Head()
+        self._body = Body()
+
+    def add_tag(self, name, contents):
+        self._body.add_tag(name, contents)
+
+    def display(self):
+        self._doc_type.display()
+        print('<html>')
+        self._head.display()
+        self._body.display()
+        print('</html>')
