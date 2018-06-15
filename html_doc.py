@@ -65,4 +65,5 @@ if __name__ == '__main__':
     my_page.add_tag('h1', 'Main heading')
     my_page.add_tag('h2', 'sub-heading')
     my_page.add_tag('p', 'This is a paragraph that will appear on the page')
-    my_page.display()
+    with open('test.html', 'w') as test_doc:
+        my_page.display(file=test_doc)
