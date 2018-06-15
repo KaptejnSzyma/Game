@@ -23,3 +23,20 @@ class Head(Tag):
 
     def __init__(self):
         super().__init__('head', '')
+
+
+class Body(Tag):
+
+    def __init__(self):
+        super().__init__('body', '')
+        self._body_contents = []
+
+    def add_tag(self, name, contents):
+        new_tag = Tag(name, contents)
+        self._body_contents.append(new_tag)
+
+    def display(self):
+        for tag in self._body_contents:
+            self.contents += str(tag)
+
+        super().display()
