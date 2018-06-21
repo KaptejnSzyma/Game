@@ -55,7 +55,8 @@ class Flock(object):
             try:
                 duck.fly()
             except AttributeError:
-                pass
+                print("One duck down")
+                raise
 
 
 if __name__ == '__main__':
