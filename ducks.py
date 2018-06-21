@@ -48,7 +48,8 @@ class Flock(object):
         self.flock = []
 
     def add_duck(self, duck: Duck) -> None:
-        self.flock.append(duck)
+        if type(duck) is Duck:
+            self.flock.append(duck)
 
     def migrate(self):
         problem = None
