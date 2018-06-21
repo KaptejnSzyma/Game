@@ -32,6 +32,9 @@ class Duck(object):
 
 class Penguin(object):
 
+    def __init__(self):
+        self.fly = self.aviate
+
     def walk(self):
         print("Waddle, waddle, I waddle too")
 
@@ -40,6 +43,9 @@ class Penguin(object):
 
     def quack(self):
         print("Are you 'avin a larf? I'm a penguin! ")
+
+    def aviate(self):
+        print("I won a lottery and bought a learjet")
 
 
 class Mallard(Duck):
