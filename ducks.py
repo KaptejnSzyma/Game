@@ -56,6 +56,8 @@ class Flock(object):
         # if isinstance(duck, Duck):
         if callable(fly_method):
             self.flock.append(duck)
+        else:
+            raise TypeError("Cannot add duck, are you sure it's not a " + str(type(duck).__name__))
 
     def migrate(self):
         problem = None
