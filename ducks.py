@@ -42,13 +42,17 @@ class Penguin(object):
         print("Are you 'avin a larf? I'm a penguin! ")
 
 
+class Mallard(Duck):
+    pass
+
+
 class Flock(object):
 
     def __init__(self):
         self.flock = []
 
     def add_duck(self, duck: Duck) -> None:
-        if type(duck) is Duck:
+        if isinstance(duck, Duck):
             self.flock.append(duck)
 
     def migrate(self):
