@@ -52,7 +52,10 @@ class Flock(object):
 
     def migrate(self):
         for duck in self.flock:
-            duck.fly()
+            try:
+                duck.fly()
+            except AttributeError:
+                pass
 
 
 if __name__ == '__main__':
