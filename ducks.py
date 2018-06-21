@@ -52,7 +52,9 @@ class Flock(object):
         self.flock = []
 
     def add_duck(self, duck: Duck) -> None:
-        if isinstance(duck, Duck):
+        fly_method = getattr(duck, 'fly', None)
+        # if isinstance(duck, Duck):
+        if callable(fly_method):
             self.flock.append(duck)
 
     def migrate(self):
