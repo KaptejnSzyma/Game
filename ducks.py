@@ -70,7 +70,7 @@ class Flock(object):
         for duck in self.flock:
             try:
                 duck.fly()
-                raise AttributeError("Testing excepetion error in migrate")
+                raise AttributeError("Testing excepetion error in migrate") # TODO remove this before release
             except AttributeError as e:
                 print("One duck down")
                 problem = e
